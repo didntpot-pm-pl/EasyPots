@@ -1,0 +1,12 @@
+name: EasyPots
+
+version: 1.0.0
+
+main: DidntPot\EasyPots\Loader
+description: A plugin that allows players to easily pot.
+website: https://github.com/didntpot-pm-pl/EasyPots
+
+authors:
+  - DidntPot
+api:
+  - 4.0.0
