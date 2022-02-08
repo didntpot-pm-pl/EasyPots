@@ -4,8 +4,8 @@ namespace DidntPot\EasyPots;
 
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent;
-use pocketmine\item\ItemFactory;
 use pocketmine\item\ItemIds;
+use pocketmine\item\VanillaItems;
 
 class EventListener implements Listener
 {
@@ -39,7 +39,7 @@ class EventListener implements Listener
 
                 if(!$player->isCreative())
                 {
-                    $player->getInventory()->setItem($player->getInventory()->getHeldItemIndex(), ItemFactory::getInstance()->getItem(0));
+                    $player->getInventory()->setItem($player->getInventory()->getHeldItemIndex(), VanillaItems::AIR());
                 }
             }
         }
